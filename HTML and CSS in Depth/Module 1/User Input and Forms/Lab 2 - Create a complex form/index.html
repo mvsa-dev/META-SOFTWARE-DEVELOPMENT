@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Lemon Bookings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="/html">
+      <div>
+        <label for="email_address">Email Address</label>
+        <input type="email" id="email_address" name="email_address " required />
+      </div>
+      <div>
+        <label for="date_booking">Date of Booking</label>
+        <input type="date" name="date_booking" id="date_booking" required />
+      </div>
+      <div>
+        <label for="number_people">Number of People</label>
+        <input
+          type="number"
+          name="number_people"
+          id="number_people"
+          min="1"
+          max="8"
+          required
+        />
+      </div>
+      <div>
+        <label for="cancel_policy">
+          <input
+            type="checkbox"
+            name="cancel_policy"
+            id="cancel_policy"
+            checked
+            required
+          />I agree to the cancellation policy
+        </label>
+      </div>
+      <button type="submit">Book Now</button>
+    </form>
+  </body>
+</html>
