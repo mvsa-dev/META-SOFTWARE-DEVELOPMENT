@@ -1,0 +1,42 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  flex: 0 1 auto;
+}
+
+.box {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  margin: 2px;
+  padding: 10px;
+}
+
+.box1 {
+}
+
+.box2 {
+}
+
+.box3 {
+  background: blanchedalmond;
+  align-self: center;
+  flex: 1 1 auto;
+}
+
+.box4 {
+}
+
+.box5 {
+}
+
+.box6 {
+}
+
+.box7 {
+}
