@@ -1,0 +1,122 @@
+/*id*/
+#aboutCard {
+  background: #6b5f4e;
+  color: white;
+}
+
+#timesCard {
+  padding: 2rem 1rem 0rem 2rem;
+  width: 100%;
+}
+
+/*class*/
+.banner {
+  width: 100%;
+  background: white;
+  color: rgba(73, 94, 87, 1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.cardSection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 300px;
+  justify-content: space-evenly;
+  background: white;
+  color: rgba(73, 94, 87, 1);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  width: 300px;
+}
+
+.card p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cardImage {
+  display: flex;
+  flex: 1 1 0;
+  flex-flow: row nowrap;
+}
+
+/*tags*/
+/* * {
+  text-align: center;
+} */
+body {
+  background: rgba(73, 94, 87, 1);
+  height: 100vh;
+  width: 100%;
+  padding: 1rem 3rem 3rem 3rem;
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
+img {
+  width: 4rem;
+}
+
+nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  background: white;
+  color: rgba(73, 94, 87, 1);
+  padding: 0.5rem;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+p {
+  padding-top: 1rem;
+}
+
+span {
+  display: block;
+}
+
+footer {
+  display: flex;
+  flex: 1 1 0;
+  flex-flow: row;
+  padding-top: 4rem;
+  width: 100%;
+}
+
+footer .col {
+  width: 50%;
+}
+
+footer .col2 {
+  border-top: #6b5f4e solid 0.3rem;
+  text-align: end;
+  width: 50%;
+}
