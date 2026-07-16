@@ -1,6 +1,6 @@
 /*id*/
 #aboutCard {
-  background: #6b5f4e;
+  background: #6b5f4ea1;
   color: white;
 }
 
@@ -21,7 +21,7 @@
 
 .cardSection {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   gap: 2rem;
   margin-top: 2rem;
@@ -36,7 +36,7 @@
   color: rgba(73, 94, 87, 1);
   border-radius: 0.3rem;
   padding: 1rem;
-  width: 300px;
+  max-width: 400px;
 }
 
 .card p {
@@ -51,15 +51,15 @@
 }
 
 /*tags*/
-/* * {
-  text-align: center;
-} */
 body {
+  display: flex;
+  flex-direction: column;
   background: rgba(73, 94, 87, 1);
   height: 100vh;
   width: 100%;
-  padding: 1rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
   color: white;
+  overflow-x: hidden;
 }
 
 header {
@@ -72,7 +72,11 @@ img {
 
 nav {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(73, 94, 87, 1);
 }
 
 ul {
@@ -81,16 +85,29 @@ ul {
   justify-content: space-evenly;
   font-weight: 900;
   border-radius: 0.5rem;
-  background: white;
-  color: rgba(73, 94, 87, 1);
+  background: #6b5f4ea2;
+  color: white;
   padding: 0.5rem;
+}
+
+li:hover {
+  transform: scale(1.08);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {
   font-weight: 900;
 }
 
-h2 {
+.card h1 {
   font-weight: 900;
   padding-bottom: 1rem;
 }
@@ -109,14 +126,59 @@ footer {
   flex-flow: row;
   padding-top: 4rem;
   width: 100%;
+  position: sticky;
 }
 
+main {
+  flex-grow: 1;
+}
 footer .col {
   width: 50%;
 }
 
 footer .col2 {
-  border-top: #6b5f4e solid 0.3rem;
+  border-top: #6b5f4ea1 solid 0.3rem;
   text-align: end;
   width: 50%;
+}
+
+button {
+  background: rgba(73, 94, 87, 1);
+  color: white;
+  border: #6b5f4e;
+  border-radius: 0.5rem;
+  height: 2rem;
+}
+
+button:hover {
+  background-color: #6b5f4ea1;
+  transform: scale(1.01);
+}
+
+#aboutCard button:hover {
+  background: rgba(255, 255, 255, 0.973);
+  color: rgba(73, 94, 87, 1);
+  transform: scale(1.01);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    color: orangered;
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+    color: red;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    color: rgba(73, 94, 87, 1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
 }
